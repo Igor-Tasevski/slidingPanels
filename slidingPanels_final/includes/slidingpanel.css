@@ -1,0 +1,169 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+main.flex {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
+
+
+section {
+    width: 50%;
+    text-align: center;
+}
+
+
+section p {
+
+
+    text-align: justify;
+    line-height: 1.4;
+}
+
+
+aside {
+    width: 40%;
+}
+
+
+.slidePanels {
+    width: 500px;
+    position: relative;
+    margin: auto;
+
+}
+
+.pannelTabs {
+    display: none;
+    position: relative;
+    z-index: 101;
+
+
+}
+
+
+.pannelTabs h2 {
+
+    font-size: 1.2em;
+    font-weight: normal;
+    border-top: 1px solid #999;
+    cursor: pointer;
+    margin: 0px;
+    padding: 8px 23px;
+    text-transform: uppercase;
+
+
+
+}
+
+
+.pannelTabs h2:first-child {
+    border-right: 1px solid #999;
+    border-left: 1px solid #999;
+    border-top-left-radius: 11px;
+
+
+}
+
+
+.pannelTabs h2:last-child {
+
+    border-right: 1px solid #999;
+    border-left: 1px solid #999;
+    border-top-right-radius: 10px;
+
+
+}
+
+.pannelTabs h2.selected {
+    font-weight: bold;
+    color: #8d4040;
+    border-bottom: 1px solid #fff;
+}
+
+
+.panelContainer {
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    /* border: 1px solid #999; */
+    background-color: #fff;
+    margin-top: -1px;
+    border-radius: 10px;
+
+}
+
+
+.allPanels {
+    text-align: center;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+.allPanels .panel .panelDescription {
+    padding: 1em;
+}
+
+
+.allPanels .panel p {
+    font-size: .9em;
+    text-align: justify;
+    padding: 1em;
+    margin: 1em;
+}
+
+
+/* novak */
+.pannelTabs .novak.selected {
+    color: #fff;
+    background-color: rgb(9, 9, 77);
+    border: 1px solid rgb(9, 9, 77);
+}
+
+
+.allPanels .panel.novak .panelDescription {
+    background: url("../images/djokovic.jpg") no-repeat 0px 0px;
+    background-size: cover;
+    color: white;
+    border: 1px solid rgb(9, 9, 77);
+    background-size: 700px 700px;
+}
+
+/* nadal */
+.pannelTabs .nadal.selected {
+    color: #000;
+    background-color: #74a255;
+    border-bottom: 1px solid #f3f9ef;
+}
+.allPanels .panel.nadal .panelDescription{
+    background: url("../images/Nadal.jpg") no-repeat 0px 0px;
+    background-size: cover;
+    color: white;
+    border: 1px solid #e5f0de;
+    background-size: 600px 900px;
+
+}
+
+
+/* federer */
+.pannelTabs .federer.selected {
+    color: rgb(0, 0, 0);
+    background-color: orange;
+    border-bottom: 1px solid rgb(207, 195, 183);
+}
+.allPanels .panel.federer .panelDescription{
+    background: url("../images/Federer.jpg") no-repeat 0px 0px;
+    background-size: cover;
+    color: white;
+    border: 1px solid rgb(207 195 183);
+    background-size: 800px 900px;
+}
